@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Quiz
 {
-    public class TFQuestion : Question
+    public class TFQuestion : Question  //true or false
     {
         public string Text { get; set; }
         public int Points { get; set; }
