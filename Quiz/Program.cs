@@ -11,8 +11,10 @@ namespace Quiz
     {
         static void Main(string[] args)
         {
-            ParseData Quiz = new ParseData(@"../../Quiz.txt");
-            Quiz.Parser();
+            Quiz myQuiz = new Quiz(@"../../Quiz.txt");
+            ParseData load = new ParseData(myQuiz);
+
+
 
         }
     }

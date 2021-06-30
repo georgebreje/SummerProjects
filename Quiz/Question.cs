@@ -6,9 +6,11 @@ using System.Threading.Tasks;
 
 namespace Quiz
 {
-    public interface Question
+    public class Question
     {
-        string Text { get; set; }
-        int Points { get; set; }
+        public string Text { get; set; }
+        public float Points { get; set; }
+
+        public Question() { }
     }
 }

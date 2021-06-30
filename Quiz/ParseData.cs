@@ -31,7 +31,7 @@ namespace Quiz
             {
                 if (buffer.Contains('?'))
                 {
-                    Questions.Add(new TFQuestion());
+                    Questions.Add(new Question());
                     Questions[questionCount].Text = buffer;
                     questionCount++;
                 }
@@ -42,7 +42,7 @@ namespace Quiz
                     {
                         Answers.Add(new Answer());
                         Answers[aCount].ChoiceCount = choices; // each answer has different count of choices
-                        choices = 0;    // incrementing choices for an answer
+                        choices = 0;    // incrementing choices from 0 each time a new answer is found
                         Answers[aCount].Text = data;
                         data = new string[1];
 
@@ -50,6 +50,8 @@ namespace Quiz
                     // using two arrays to store lines at the moment of reading
                     else
                     {
+                        if (buffer.Contains('.'))
+                            Answers[aCount].CorrectChoiceIndex = choices; // save index of the correct choice
                         data[choices] = buffer;
                         choices++;
                         string[] newData = new string[choices + 1];

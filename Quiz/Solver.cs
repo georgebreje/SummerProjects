@@ -6,15 +6,12 @@ using System.Threading.Tasks;
 
 namespace Quiz
 {
-    public class TFQuestion : Question  //true or false
+    public class Solver
     {
-        public string Text { get; set; }
-        public int Points { get; set; }
-
-        public TFQuestion()
+        public Solver() { }
+        public void StartSolving()
         {
 
         }
-
     }
 }
