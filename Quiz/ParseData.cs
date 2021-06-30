@@ -17,9 +17,10 @@ namespace Quiz
         public ParseData(string path)
         {
             Path = path;
+            ParsingProcess();
         }
 
-        public void Parser()
+        private void ParsingProcess()
         {
             int aCount = 0, choices = 0; // count of answers and each answer's choices 
             string[] data = new string[1];
@@ -30,9 +31,10 @@ namespace Quiz
             while ((buffer = load.ReadLine()) != null)
             {
                 if (buffer.Contains('?'))
-                {
+                {   // ? shows a new question and we take the information we need
                     Questions.Add(new Question());
                     Questions[questionCount].Text = buffer;
+                    Questions[questionCount].Points = ParseToInt(buffer);
                     questionCount++;
                 }
                 else
@@ -66,5 +68,14 @@ namespace Quiz
             }
         }
 
+        private int ParseToInt(string line)
+        {
+            int points = 0;
+            foreach (char c in line)
+                if (Char.IsDigit(c))
+                    points = points * 10 + ((int)c - (int)'0');
+
+            return points;
+        }
     }
 }

@@ -11,10 +11,7 @@ namespace Quiz
     {
         static void Main(string[] args)
         {
-            Quiz myQuiz = new Quiz(@"../../Quiz.txt");
-            ParseData load = new ParseData(myQuiz);
-
-
+            
 
         }
     }

@@ -15,12 +15,11 @@ namespace Quiz.Tests
         public void ParserTest()
         {
             // arrange
-            ParseData Quiz = new ParseData(@"../../Quiz.txt");
-            Quiz.Parser();
+            Quiz myQuiz = new Quiz(@"../../Quiz.txt");
 
             // act
-            var actual = Quiz.Questions[0].Text;
-            var expected = "Are vaca aripi?";
+            var actual = myQuiz.Score;
+            var expected = 100;
 
             // assert
             Assert.AreEqual(expected, actual);

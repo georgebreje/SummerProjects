@@ -15,8 +15,17 @@ namespace Quiz
         public Quiz(string path)
         {
             parser = new ParseData(path);
-            Questions = this.parser.Questions;
-            Answers = this.parser.Answers;
+            Questions = parser.Questions;
+            Answers = parser.Answers;
+            Score = CalculateTotalScore();
+        }
+
+        private float CalculateTotalScore()
+        {
+            float total = 0;
+            foreach (Question q in Questions)
+                total += q.Points;
+            return total;
         }
     }
 }
