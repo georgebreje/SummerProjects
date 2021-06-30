@@ -1,0 +1,17 @@
+C:\Users\George\source\SummerProjects\QuizTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\George\source\SummerProjects\QuizTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\George\source\SummerProjects\QuizTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\George\source\SummerProjects\QuizTests\bin\Debug\QuizTests.dll
+C:\Users\George\source\SummerProjects\QuizTests\bin\Debug\QuizTests.pdb
+C:\Users\George\source\SummerProjects\QuizTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\George\source\SummerProjects\QuizTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\George\source\SummerProjects\QuizTests\bin\Debug\Quiz.exe
+C:\Users\George\source\SummerProjects\QuizTests\bin\Debug\Quiz.pdb
+C:\Users\George\source\SummerProjects\QuizTests\bin\Debug\Quiz.exe.config
+C:\Users\George\source\SummerProjects\QuizTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\George\source\SummerProjects\QuizTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\George\source\SummerProjects\QuizTests\obj\Debug\QuizTests.csprojAssemblyReference.cache
+C:\Users\George\source\SummerProjects\QuizTests\obj\Debug\QuizTests.csproj.CoreCompileInputs.cache
+C:\Users\George\source\SummerProjects\QuizTests\obj\Debug\QuizTests.csproj.CopyComplete
+C:\Users\George\source\SummerProjects\QuizTests\obj\Debug\QuizTests.dll
+C:\Users\George\source\SummerProjects\QuizTests\obj\Debug\QuizTests.pdb
