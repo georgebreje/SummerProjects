@@ -8,9 +8,8 @@ namespace Quiz
 {
     public class Answer
     {
-        public int ChoiceCount { get; set; }
-        public string[] Text = new string[1];
-        public int CorrectChoiceIndex = 0;
+        public List<string> Text = new List<string>();
+        public int CorrectChoice { get; set; }
         public Answer() { }
     }
 }

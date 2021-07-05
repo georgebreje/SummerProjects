@@ -1,15 +1,11 @@
 ﻿Are vaca aripi? 25
-
 da
 nu.
 ba
 bu
-
 Ursul are coada? 25
 da.
 nu
-
 In ce an suntem? 50
-
 2020
 2021.

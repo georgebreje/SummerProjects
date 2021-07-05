@@ -11,8 +11,10 @@ namespace Quiz
     {
         static void Main(string[] args)
         {
-            
+            Quiz myQuiz = new Quiz(@"../../QuizInput.txt");
+            Solver solver = new Solver(myQuiz);
 
+            Console.WriteLine(solver.GainedPoints);
         }
     }
 }

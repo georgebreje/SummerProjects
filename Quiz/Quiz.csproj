@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Answer.cs" />
+    <Compile Include="Interaction.cs" />
     <Compile Include="ParseData.cs" />
     <Compile Include="Question.cs" />
     <Compile Include="Program.cs" />
@@ -55,7 +56,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Quiz.txt" />
+    <Content Include="QuizInput.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

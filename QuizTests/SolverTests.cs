@@ -9,20 +9,16 @@ using System.Threading.Tasks;
 namespace Quiz.Tests
 {
     [TestClass()]
-    public class ParseDataTests
+    public class SolverTests
     {
         [TestMethod()]
-        public void ParserTest()
+        public void StartSolvingTest()
         {
             // arrange
-            Quiz myQuiz = new Quiz(@"../../Quiz.txt");
 
             // act
-            var actual = myQuiz.Answers[0].CorrectChoice;
-            var expected = 2;
 
             // assert
-            Assert.AreEqual(expected, actual);
         }
     }
 }

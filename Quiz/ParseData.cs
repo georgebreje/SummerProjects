@@ -9,73 +9,26 @@ namespace Quiz
 {
     public class ParseData
     {
-        public string Path { get; set; }
-        public List<Question> Questions = new List<Question>();
-        public List<Answer> Answers = new List<Answer>();
+        private string path;
 
+        public List<Question> Questions = new List<Question>();
+
+        public List<Answer> Answers = new List<Answer>();
 
         public ParseData(string path)
         {
-            Path = path;
+            this.path = path;
             ParsingProcess();
         }
 
         private void ParsingProcess()
         {
-            int aCount = 0, choices = 0; // count of answers and each answer's choices 
-            string[] data = new string[1];
-            StreamReader load = new StreamReader(Path);
-            string buffer;
-            int questionCount = 0;
+            StreamReader load = new StreamReader(path);
+            Interaction interaction = new Interaction(load);
 
-            while ((buffer = load.ReadLine()) != null)
-            {
-                if (buffer.Contains('?'))
-                {   // ? shows a new question and we take the information we need
-                    Questions.Add(new Question());
-                    Questions[questionCount].Text = buffer;
-                    Questions[questionCount].Points = ParseToInt(buffer);
-                    questionCount++;
-                }
-                else
-                {
-                    // blank lines divide answers
-                    if (buffer == "")
-                    {
-                        Answers.Add(new Answer());
-                        Answers[aCount].ChoiceCount = choices; // each answer has different count of choices
-                        choices = 0;    // incrementing choices from 0 each time a new answer is found
-                        Answers[aCount].Text = data;
-                        data = new string[1];
-
-                    }
-                    // using two arrays to store lines at the moment of reading
-                    else
-                    {
-                        if (buffer.Contains('.'))
-                            Answers[aCount].CorrectChoiceIndex = choices; // save index of the correct choice
-                        data[choices] = buffer;
-                        choices++;
-                        string[] newData = new string[choices + 1];
-                        for (int i = 0; i < choices; i++)
-                        {
-                            newData[i] = data[i];
-                            data[i] = null;
-                        }
-                        data = newData;
-                    }
-                }
-            }
+            Questions = interaction.Questions;
+            Answers = interaction.Answers;
         }
 
-        private int ParseToInt(string line)
-        {
-            int points = 0;
-            foreach (char c in line)
-                if (Char.IsDigit(c))
-                    points = points * 10 + ((int)c - (int)'0');
-
-            return points;
-        }
     }
 }
