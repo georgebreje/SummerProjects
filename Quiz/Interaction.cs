@@ -39,9 +39,15 @@ namespace Quiz
                 }
                 else
                 {
-                    Answers[index].Text.Add(buffer);
+                    Answers[index].Choices.Add(new Answer.Choice(buffer));
+                    int i = Answers[index].Choices.Count - 1;
                     if (buffer.Contains('.'))
-                        Answers[index].CorrectChoice++;
+                        Answers[index].Choices[i].IsCorrect = true;
+
+
+                    //Answers[index].Text.Add(buffer);
+                    //if (buffer.Contains('.'))
+                    //    Answers[index].CorrectChoice++;
                 }
             }
         }

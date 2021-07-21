@@ -27,5 +27,24 @@ namespace Quiz
                 total += q.Points;
             return total;
         }
+
+        internal class QuizDataSet
+        {
+        }
+
+        internal class QuizDataSetTableAdapters
+        {
+            internal class TableAdapterManager
+            {
+                internal void UpdateAll(QuizDataSet quizDataSet)
+                {
+                    throw new NotImplementedException();
+                }
+            }
+
+            internal class QuizOneTableAdapter
+            {
+            }
+        }
     }
 }

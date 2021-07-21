@@ -9,6 +9,7 @@ namespace Quiz
 {
     public class ParseData
     {
+
         private string path;
 
         public List<Question> Questions = new List<Question>();

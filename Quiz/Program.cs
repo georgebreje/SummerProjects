@@ -14,7 +14,15 @@ namespace Quiz
             Quiz myQuiz = new Quiz(@"../../QuizInput.txt");
             Solver solver = new Solver(myQuiz);
 
-            Console.WriteLine(solver.GainedPoints);
+            //Answer a = new Answer();
+            //a.Choices.Add(new Answer.Choice("a"));
+            //a.Choices.Add(new Answer.Choice("b."));
+            //a.Choices.Add(new Answer.Choice("c"));
+            //a.Choices.Add(new Answer.Choice("d"));
+
+            //a.TestDisplay();
+            
+            //Console.WriteLine(solver.GainedPoints);
         }
     }
 }

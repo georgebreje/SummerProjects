@@ -21,9 +21,9 @@ namespace Quiz
             int select = 0;
             for(int i = 0; i < toSolve.Questions.Count; i++)
             {
-                select = rnd.Next(toSolve.Answers[i].Text.Count); // select a random answer
-                if (toSolve.Answers[i].Text[select].Contains('.'))     // if answer's correct
-                    GainedPoints += toSolve.Questions[i].Points / toSolve.Answers[i].CorrectChoice; // add the amount of points divided by the number of correct answers
+                //select = rnd.Next(toSolve.Answers[i].Text.Count); // select a random answer
+                //if (toSolve.Answers[i].Text[select].Contains('.'))     // if answer's correct
+                  //  GainedPoints += toSolve.Questions[i].Points / toSolve.Answers[i].CorrectChoice; // add the amount of points divided by the number of correct answers
             }
         }
     }

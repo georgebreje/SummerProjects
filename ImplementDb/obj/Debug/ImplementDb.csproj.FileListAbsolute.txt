@@ -1,0 +1,12 @@
+C:\Users\George\source\SummerProjects\ImplementDb\bin\Debug\Database1.mdf
+C:\Users\George\source\SummerProjects\ImplementDb\bin\Debug\Database1_log.ldf
+C:\Users\George\source\SummerProjects\ImplementDb\bin\Debug\ImplementDb.exe.config
+C:\Users\George\source\SummerProjects\ImplementDb\bin\Debug\ImplementDb.exe
+C:\Users\George\source\SummerProjects\ImplementDb\bin\Debug\ImplementDb.pdb
+C:\Users\George\source\SummerProjects\ImplementDb\obj\Debug\ImplementDb.csprojAssemblyReference.cache
+C:\Users\George\source\SummerProjects\ImplementDb\obj\Debug\ImplementDb.Form1.resources
+C:\Users\George\source\SummerProjects\ImplementDb\obj\Debug\ImplementDb.Properties.Resources.resources
+C:\Users\George\source\SummerProjects\ImplementDb\obj\Debug\ImplementDb.csproj.GenerateResource.cache
+C:\Users\George\source\SummerProjects\ImplementDb\obj\Debug\ImplementDb.csproj.CoreCompileInputs.cache
+C:\Users\George\source\SummerProjects\ImplementDb\obj\Debug\ImplementDb.exe
+C:\Users\George\source\SummerProjects\ImplementDb\obj\Debug\ImplementDb.pdb
