@@ -1,0 +1,7 @@
+C:\Users\George\source\SummerProjects\Restaurant\bin\Debug\Restaurant.exe.config
+C:\Users\George\source\SummerProjects\Restaurant\bin\Debug\Restaurant.exe
+C:\Users\George\source\SummerProjects\Restaurant\bin\Debug\Restaurant.pdb
+C:\Users\George\source\SummerProjects\Restaurant\obj\Debug\Restaurant.csprojAssemblyReference.cache
+C:\Users\George\source\SummerProjects\Restaurant\obj\Debug\Restaurant.csproj.CoreCompileInputs.cache
+C:\Users\George\source\SummerProjects\Restaurant\obj\Debug\Restaurant.exe
+C:\Users\George\source\SummerProjects\Restaurant\obj\Debug\Restaurant.pdb

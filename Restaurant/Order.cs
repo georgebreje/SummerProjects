@@ -6,12 +6,7 @@ using System.Threading.Tasks;
 
 namespace Restaurant
 {
-    class Program
+    class Order
     {
-        static void Main(string[] args)
-        {
-            Drink d = new Drink();
-            d.AccessStock();
-        }
     }
 }

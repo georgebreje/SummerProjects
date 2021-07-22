@@ -6,12 +6,9 @@ using System.Threading.Tasks;
 
 namespace Restaurant
 {
-    class Program
+    interface IConsumable
     {
-        static void Main(string[] args)
-        {
-            Drink d = new Drink();
-            d.AccessStock();
-        }
+        void AccessStock();
+        void ReceivedOrder();   // modify qunatities and deliver it forward to client
     }
 }
